@@ -1,0 +1,50 @@
+body
+{
+	font-family: sans-serif;
+	background-color: grey;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+li
+{
+	position: relative;
+	float: left;
+	width: 8em;
+	height: 8em;
+	padding: 0em 0em 0em 2em;
+	margin: 2.5em 0.8em 0.8em 0.8em;
+	list-style: none;
+	background-color: lightyellow;
+	transform: rotate(-3deg);
+}
+
+li:nth-child(2n+2)
+{
+	background-color: lightgreen;
+	transform: rotate(5deg);
+}
+
+li:nth-child(3n+3)
+{
+	background-color: rgb(204,204,255);
+	transform: rotate(-3deg);
+}
+
+
+li:nth-child(5)
+{
+	top: -9px;
+	transform: rotate(5deg);
+}
+
+li:hover
+{
+	transform: rotate(0deg);
+	transform: scale(1.5,1.5);
+	box-shadow: 2px 2px 5px black;
+	z-index:2;
+}
